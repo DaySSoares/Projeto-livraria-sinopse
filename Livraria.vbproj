@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94B79E85-11F1-45F7-963F-56B0F1C10D62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Livraria.My.MyApplication</StartupObject>
+    <RootNamespace>Livraria</RootNamespace>
+    <AssemblyName>Livraria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Livraria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Livraria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Ffrm_funcionarioMenu.Designer.vb">
+      <DependentUpon>Ffrm_funcionarioMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ffrm_funcionarioMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_adm.Designer.vb">
+      <DependentUpon>frm_adm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_adm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_donoDashboard.Designer.vb">
+      <DependentUpon>frm_donoDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_donoDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_clientes.Designer.vb">
+      <DependentUpon>frm_cadastro_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_func.Designer.vb">
+      <DependentUpon>frm_cadastro_func.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_func.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_prod.Designer.vb">
+      <DependentUpon>frm_cadastro_prod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_prod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_donoGerenFunc.Designer.vb">
+      <DependentUpon>frm_donoGerenFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_donoGerenFunc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_donoMenu.Designer.vb">
+      <DependentUpon>frm_donoMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_donoMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gerenciarCli.Designer.vb">
+      <DependentUpon>frm_gerenciarCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gerenciarCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gerenciarProd.Designer.vb">
+      <DependentUpon>frm_gerenciarProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gerenciarProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gerenciar_user.Designer.vb">
+      <DependentUpon>frm_gerenciar_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gerenciar_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relat_vendas.Designer.vb">
+      <DependentUpon>frm_relat_vendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relat_vendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_userMenu.Designer.vb">
+      <DependentUpon>frm_userMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_userMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Vendas.Designer.vb">
+      <DependentUpon>frm_Vendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Vendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frm_admin.Designer.vb">
+      <DependentUpon>frm_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ffrm_funcionarioMenu.resx">
+      <DependentUpon>Ffrm_funcionarioMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_adm.resx">
+      <DependentUpon>frm_adm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_donoDashboard.resx">
+      <DependentUpon>frm_donoDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_clientes.resx">
+      <DependentUpon>frm_cadastro_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_func.resx">
+      <DependentUpon>frm_cadastro_func.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_prod.resx">
+      <DependentUpon>frm_cadastro_prod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_donoGerenFunc.resx">
+      <DependentUpon>frm_donoGerenFunc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_donoMenu.resx">
+      <DependentUpon>frm_donoMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gerenciarCli.resx">
+      <DependentUpon>frm_gerenciarCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gerenciarProd.resx">
+      <DependentUpon>frm_gerenciarProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gerenciar_user.resx">
+      <DependentUpon>frm_gerenciar_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relat_vendas.resx">
+      <DependentUpon>frm_relat_vendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_userMenu.resx">
+      <DependentUpon>frm_userMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Vendas.resx">
+      <DependentUpon>frm_Vendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_admin.resx">
+      <DependentUpon>frm_admin.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
